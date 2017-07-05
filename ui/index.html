@@ -10,7 +10,7 @@ function clickCounter() {
         } else {
             localStorage.clickcount = 1;
         }
-        document.getElementById("result").innerHTML = "Number of Visits " + localStorage.clickcount + ".";
+        document.getElementById("result").innerHTML = "Your Click was " + localStorage.clickcount + "th click.";
     } else {
         document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
     }
@@ -29,7 +29,7 @@ function clickCounter() {
       
         <a href="https://drive.google.com/drive/folders/0ByIFH-5wdm8jNWZHRFIxdHV0blU?usp=sharing">7th sem Notes and Question papers</a><br>
         <a href="https://drive.google.com/drive/folders/0ByIFH-5wdm8jWnZWdkVIYlhYT0U?usp=sharing">Magnetrons notes</a><br>
-          <p><button onclick="clickCounter()" type="button">Click Once!</button></p>
+          <p><button onclick="clickCounter()" type="button">Check your CLICK Number</button></p>
 <div id="result"></div>
 <FORM METHOD="post" ACTION="server_file_to_process_form_data">
 
