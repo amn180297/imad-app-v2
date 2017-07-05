@@ -10,7 +10,7 @@ function clickCounter() {
         } else {
             localStorage.clickcount = 1;
         }
-        document.getElementById("result").innerHTML = "Your Click was " + localStorage.clickcount + "th click.";
+        document.getElementById("result").innerHTML = "Number of likes " + localStorage.clickcount + ".";
     } else {
         document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
     }
@@ -26,10 +26,26 @@ function clickCounter() {
         <div class="center text-big bold">
             Hi!! I am  AMAN.
         </div>
-      
+      <DIV>
+
+<B>Poll Results</B><P>
+
+<UL>
+
+<LI><B>Yes I do</B> 50%
+
+<LI><B>No, I do not</B> 5%
+
+<LI><B>I dont know</B> 20%
+
+<LI><B>Depends on the question</B> 25%
+
+</UL>
+
+</DIV>
         <a href="https://drive.google.com/drive/folders/0ByIFH-5wdm8jNWZHRFIxdHV0blU?usp=sharing">7th sem Notes and Question papers</a><br>
         <a href="https://drive.google.com/drive/folders/0ByIFH-5wdm8jWnZWdkVIYlhYT0U?usp=sharing">Magnetrons notes</a><br>
-          <p><button onclick="clickCounter()" type="button">Check your CLICK Number</button></p>
+          <p><button onclick="clickCounter()" type="button">LIKE</button></p>
 <div id="result"></div>
 <FORM METHOD="post" ACTION="server_file_to_process_form_data">
 
