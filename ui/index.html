@@ -2,6 +2,20 @@
 <html>
     <head>
         <link href="/ui/style.css" rel="stylesheet" />
+        <script>
+function clickCounter() {
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+            localStorage.clickcount = Number(localStorage.clickcount)+1;
+        } else {
+            localStorage.clickcount = 1;
+        }
+        document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+}
+</script>
     </head>
     <body>
         <div class="center">
@@ -11,6 +25,8 @@
         <div class="center text-big bold">
             Hi!! I am  AMAN.
         </div>
+        <p><button onclick="clickCounter()" type="button">Click me!</button></p>
+<div id="result"></div>
         <a href="https://drive.google.com/drive/folders/0ByIFH-5wdm8jNWZHRFIxdHV0blU?usp=sharing">7th sem Notes and Question papers</a><br>
         <a href="https://drive.google.com/drive/folders/0ByIFH-5wdm8jWnZWdkVIYlhYT0U?usp=sharing">Magnetrons notes</a>
         <script type="text/javascript" src="/ui/main.js">
